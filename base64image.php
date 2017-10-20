@@ -9,12 +9,12 @@
 	* Coded for PHP 5.4+
 	*
 	* Example usage:
-	*                  php -f base64image.php <b64_text_file> <x.jpg | x.gif | x.png>
+	*                  php base64image.php <b64_text_file> <x.jpg | x.gif | x.png>
 	*                  ./base64image <b64_text_file> <x.jpg | x.gif | x.png>
 	*
 	* @author          Martin Latter <copysense.co.uk>
 	* @copyright       Martin Latter 24/04/2015
-	* @version         0.12
+	* @version         0.13
 	* @license         GNU GPL version 3.0 (GPL v3); http://www.gnu.org/licenses/gpl.html
 	* @link            https://github.com/Tinram/base64image.git
 */
@@ -31,13 +31,13 @@ $aImageTypes = ['jpg', 'gif', 'png'];
 
 $sUsage =
 	PHP_EOL . ' ' . basename(__FILE__, '.php') .
-	DUB_EOL . "\tusage: php -f " . basename(__FILE__) . ' <b64_file> <x.jpg | x.gif | x.png>' . DUB_EOL;
+	DUB_EOL . "\tusage: php " . basename(__FILE__) . ' <b64_file> <x.jpg | x.gif | x.png>' . DUB_EOL;
 
 $sImageError = PHP_EOL . ' An error occurred creating the image!' . DUB_EOL;
 
 
 # file processing
-if (@ ! $_SERVER['argv'][1]) {
+if ( ! isset($_SERVER['argv'][1])) {
 	die($sUsage);
 }
 
@@ -47,7 +47,7 @@ if ( ! file_exists($sFilename)) {
 	die(PHP_EOL . ' \'' . $sFilename . '\' does not exist in this directory!' . DUB_EOL);
 }
 
-if (@ ! $_SERVER['argv'][2]) {
+if ( ! isset($_SERVER['argv'][2])) {
 	die(PHP_EOL . ' No image parameter specified.' . DUB_EOL . $sUsage);
 }
 
@@ -84,7 +84,7 @@ switch ($sFileType) {
 	break;
 	
 	case 'jpg':
-		$bIm = ImageJPEG($rImage, $sImageFilename, 90);
+		$bIm = ImageJPEG($rImage, $sImageFilename, 94);
 	break;
 	
 	case 'gif':
