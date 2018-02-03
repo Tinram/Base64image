@@ -1,4 +1,4 @@
-#!/usr/bin/php
+#!/usr/bin/env php
 <?php
 
 /**
@@ -14,7 +14,7 @@
 	*
 	* @author          Martin Latter <copysense.co.uk>
 	* @copyright       Martin Latter 24/04/2015
-	* @version         0.13
+	* @version         0.14
 	* @license         GNU GPL version 3.0 (GPL v3); http://www.gnu.org/licenses/gpl.html
 	* @link            https://github.com/Tinram/base64image.git
 */
