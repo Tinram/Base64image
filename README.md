@@ -11,11 +11,11 @@ e.g. reconstruct images from base64 text which occurs as HTML `data:image` or in
 
 ## Usage
 
-    php base64image.php example.txt example.png
+        php base64image.php examples/example.txt example.png
 
-or if the script file is renamed, made executable, and placed in */usr/local/bin*:
+or if the script file is renamed, made executable, and present in $PATH:
 
-    base64image example.txt example.png
+        base64image example.txt example.png
 
 
 ## License
