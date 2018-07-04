@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Create image files from base64-encoded image data.
+Create image files from base64-encoded image strings.
 
 e.g. reconstruct images from base64 text which occurs as HTML `data:image` or in *.mht* files and emails.
 
@@ -13,7 +13,7 @@ e.g. reconstruct images from base64 text which occurs as HTML `data:image` or in
 
         php base64image.php examples/example.txt example.png
 
-or if the script file is renamed, made executable, and present in $PATH:
+or if the script file is renamed, made executable, and present in *$PATH*:
 
         base64image example.txt example.png
 
