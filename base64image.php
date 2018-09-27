@@ -4,7 +4,7 @@
 /**
 	* base64image
 	*
-	* Command-line tool to create an image from a base64-encoded text string of an image (e.g. from .mht files or emails).
+	* Command-line tool to output an image file from a base64-encoded text string of an image (e.g. from .mht files or emails).
 	*
 	* Coded for PHP 5.4+
 	*
