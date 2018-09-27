@@ -4,9 +4,11 @@
 
 ## Purpose
 
-Create image files from base64-encoded image strings.
+Output image files from base64-encoded image strings.
 
 e.g. reconstruct images from base64 text which occurs as HTML `data:image` or in *.mht* files and emails.
+
+Images can be output as JPEGs, GIFs, and PNGs.
 
 
 ## Usage
@@ -15,7 +17,7 @@ e.g. reconstruct images from base64 text which occurs as HTML `data:image` or in
 
 or if the script file is renamed, made executable, and present in *$PATH*:
 
-        base64image example.txt example.png
+        base64image examples/example.txt example.png
 
 
 ## License
