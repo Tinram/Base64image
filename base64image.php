@@ -12,7 +12,7 @@
 	*                  php base64image.php <b64_text_file> <x.jpg | x.gif | x.png>
 	*                  ./base64image <b64_text_file> <x.jpg | x.gif | x.png>
 	*
-	* @author          Martin Latter <copysense.co.uk>
+	* @author          Martin Latter
 	* @copyright       Martin Latter 24/04/2015
 	* @version         0.14
 	* @license         GNU GPL version 3.0 (GPL v3); http://www.gnu.org/licenses/gpl.html
