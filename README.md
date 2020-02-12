@@ -13,11 +13,15 @@ Images can be output as JPEGs, GIFs, and PNGs.
 
 ## Usage
 
-        php base64image.php examples/example.txt example.png
+```bash
+    php base64image.php examples/example.txt example.png
+```
 
 or if the script file is renamed, made executable, and present in *$PATH*:
 
-        base64image examples/example.txt example.png
+```bash
+    base64image examples/example.txt example.png
+```
 
 
 ## License
